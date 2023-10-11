@@ -15,7 +15,7 @@ public class Condicional1 {
 			System.out.printf("El número es mayor es el primero: %d", numeroUno);
 		} else {
 			System.out.printf("El número es menor es el segundo: %d", numeroDos );
-		}
+		}   
 			
 
 		}
