@@ -17,10 +17,9 @@ public class Condicional1 {
 			System.out.printf("El número es menor es el segundo: %d", numeroDos );
 		}   
 			
-
+		//Esto es un cambio
 		}
 	}
-		
 	
 	
 

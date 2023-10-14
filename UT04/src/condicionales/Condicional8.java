@@ -29,9 +29,12 @@ public class Condicional8 {
 			System.out.printf("El orden de los numeros es %d, %d, %d", numero1, numero3, numero2);
 		} else if ((numero3 >= numero1) && (numero3 >= numero2) && (numero1 >= numero2)) {
 			System.out.printf("El orden de los numeros es %d, %d, %d", numero3, numero1, numero2);
-		}
+		} else if ((numero2 >= numero1) && (numero2 >= numero3) && (numero1 >= numero3)) {
+			System.out.printf("El orden de los numeros es %d, %d, %d", numero2, numero1, numero3); 	
+		} 
 	}
 }
+
 //		} else if  ((numero2 >= numero1) && (numero2 >=numero3) 
 //				&& (numero1 < numero3)) 
 //			System.out.printf("El orden de los numeros es %d, %d, %d", numero1, numero2, numero3);	
