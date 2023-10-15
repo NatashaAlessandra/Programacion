@@ -24,7 +24,7 @@ public class Ejercicio9 {
 		
 		
 		
-		double sueldoFinal = sueldoBase + (primeraVenta + segundaVenta + terceraVenta);
+		double sueldoFinal = sueldoBase + (primeraVenta + segundaVenta + terceraVenta) * 0.10;
 		System.out.printf("El sueldo final es %.2f\n", sueldoFinal); 
 				//primeraVenta, segundaVenta, terceraVenta + sueldoBase, sueldoFinal);
 		

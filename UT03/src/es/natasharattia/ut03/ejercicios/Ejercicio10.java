@@ -8,6 +8,13 @@ public class Ejercicio10 {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
 		
+		double precioCompra;
+		
+		System.out.println("Introduce el precio del producto");
+		precioCompra = scanner.nextDouble();
+		
+		double precioFinal =  precioCompra * 0.85;
+		System.out.printf("El total a pagar es de %.2f.: ", precioFinal);
 	}
 
 }
