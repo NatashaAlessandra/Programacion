@@ -8,23 +8,26 @@ public class Ejercicio46 {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Introduce un numero: ");
-
+		int num = scanner.nextInt();
 		int numEntero = 0;
-		String numCadena = numEntero + "";
-		System.out.printf("El numero de cifras es de '%d'", numCadena.length());
-		if (numEntero > 0) {
-			System.out.println("");
-		}
+		
 
 	}
 
 	public static int numeroDeCifras(int numeroEnteroPositivo) {
 		int numEntero = 0;
+		int num = 0;
 		String numCadena= numEntero+"";
 		int resultadoPositivo = 0;
+		if (num > 0) {
+			System.out.println("El numero es positivo");
+		} else {
+			System.out.println("El numero es 0");
 		
-		while (numeroEnteroPositivo > 0)
-		   
+		System.out.printf("El numero de cifras es de '%d'", numCadena.length());
+		
+		}
+		
 	    System.out.printf("El numero de cifras es de '%d'", numCadena.length());	
 		return resultadoPositivo;
 	}
