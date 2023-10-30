@@ -12,12 +12,14 @@ public class Ejercicio46 {
 		int resultadoPositivo = esPositivo(numeroEntero);
 
 		String textoResultadoPosiivo = resultadoPositivo + "";
-		System.out.println("El numero de cifras es de " + textoResultadoPosiivo.length());
+		if (resultadoPositivo != 0 && resultadoPositivo > 0) {
+			System.out.println("El numero de cifras es de " + textoResultadoPosiivo.length());
+		}
 	}
 
 	public static int esPositivo(int numeroEntero) {
 
-		int resultadoPositivo;
+		int resultadoPositivo = 0;
 		if (numeroEntero > 0) {
 			System.out.println("El numero es positivo");
 			resultadoPositivo = numeroEntero;
