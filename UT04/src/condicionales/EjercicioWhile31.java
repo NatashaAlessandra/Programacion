@@ -23,7 +23,7 @@ public class EjercicioWhile31 {
 
 			if (numeroSecreto < numero) {
 				System.out.println("El número secerto es menor");
-			} else if (numeroSecreto > numero) {
+		} else if (numeroSecreto > numero) {
 				System.out.println("El numero secreto es mayor");
 			}
 		}

@@ -15,7 +15,7 @@ public class EjercicioWhile32 {
 		producto = scanner.nextInt();
 		
 		int pago =10;
-		 if ()
+		 
 			
 		
 		
@@ -35,4 +35,4 @@ public class EjercicioWhile32 {
 		}
 }
 
-}
+
