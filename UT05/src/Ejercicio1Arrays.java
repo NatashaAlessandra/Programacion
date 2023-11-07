@@ -12,7 +12,7 @@ public class Ejercicio1Arrays {
 		numerosEnteros[3] =9;
 		numerosEnteros[4] =11;
 		
-		System.out.printf("La tercera posición es %d  y la cuarta %d posición", numerosEnteros[2], numerosEnteros[4]);
+		System.out.printf("La tercera posición es %d  y la cuarta posición es %d", numerosEnteros[2], numerosEnteros[4]);
 		
 			
 		}
