@@ -5,24 +5,32 @@ public class Ejercicio5Arrays {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
-		int numElementos = pedirNumeros (scanner);
-
-		System.out.println("Escribe 10 números");
-		numElementos = scanner.nextInt();
-		
-	}
-
-	private static int pedirNumeros(Scanner scanner) {
-		// TODO Auto-generated method stub
 
 		int[] numeros = new int[10];
+		int numMayor = numeros[0];
+		int posMayor = 0;
+		int numMenor = numeros[0];
+		int posMenor = 0;
 		for (int i = 0; i < numeros.length; i++) {
-			System.out.printf("Escribe 10 números ", i);
+			System.out.printf("Escribe un número entero ", i);
 			numeros[i] = scanner.nextInt();
-			
+
 		}
-		System.out.printf("La tercera posición es %d  y la cuarta posición es %d", numeros[2], numeros[4]);
-		return 0;
+
+		for (int posActual = 0; posActual < numeros.length; posActual++) {
+			int numPosActual = numeros[posActual];
+
+			if (numPosActual > numMayor) {
+				numMayor = numPosActual;
+				posMayor = posActual;
+			} else if (numPosActual < numMenor) {
+				numMenor = numPosActual;
+				posMenor = posActual;
+			}
+
+		}
+		System.out.printf("El máximo es %d y esta en la posición %d\n", numMayor, posMayor);
+		System.out.printf("El mínimo es %d y esta en la posición %d\n", numMenor, posMenor);
 
 	}
 
