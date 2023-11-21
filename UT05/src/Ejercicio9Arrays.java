@@ -13,8 +13,9 @@ public class Ejercicio9Arrays {
 		llenarConAleatorios(rnd, num);
 		mostrarNumeros(num);
 		
-		procesarNumeros(num);
-		System.out.println("División de número pares es de %d" + num);
+//		procesarNumeros(num);
+		int resultadoPares =  procesarNumeros(num, 0);
+		System.out.println("División de número pares es de " + resultadoPares);
 //		int mostraPares = esPar();
 
 	}
@@ -32,14 +33,16 @@ public class Ejercicio9Arrays {
 
 	}
 
-	private static void procesarNumeros(int[] num) {
-		
+	private static int procesarNumeros(int[] num, int numPar) {
+		int resultadoPar=0;
 		for (int i = 0; i < num.length; i++) {
-			num[i] = num[i] / 2;
-			if (esPar(num[i])) {
-				int resultado = num[i] / 2;
+			num[i] = num[i];
+			if (esPar(num[i]) && (esPar(num[i])!= true)) {
+				resultadoPar = numPar(num[i]) / 2;
 			}	
 		}
+		;
+		return resultadoPar;
 	}
 
 	private static int[] llenarConAleatorios(Random rnd, int numeros[]) {
