@@ -5,9 +5,11 @@ public class Ejercicio7Arrays {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] numeros = new int[10];
-		Random rnd = new Random(1);
+		Random rnd = new Random();
 		generarNumeros(rnd, numeros);
 
+		System.out.println();
+		
 		for (int i = 0; i < numeros.length; i++) {
 			if (esPrimo(numeros[i])) {
 				System.out.printf("Número primo: %d en la posición %d%n", numeros[i], i);
