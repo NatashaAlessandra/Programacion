@@ -9,14 +9,9 @@ public class Ejercicio9Arrays {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] num = new int[CANTIDAD_NUMEROS];
-		Random rnd = new Random();
+		Random rnd = new Random(1);
 		llenarConAleatorios(rnd, num);
-		mostrarNumeros(num);
-		
-//		procesarNumeros(num);
-		int resultadoPares =  procesarNumeros(num, 0);
-		System.out.println("División de número pares es de " + resultadoPares);
-//		int mostraPares = esPar();
+		procesarNumeros(num);
 
 	}
 
@@ -24,33 +19,39 @@ public class Ejercicio9Arrays {
 		if (numPar % 2 == 0) {
 			return true;
 		}
-		
+
 		return false;
 
 	}
 
-	private static void mostrarNumeros(int num[]) {
-
-	}
-
-	private static int procesarNumeros(int[] num, int numPar) {
-		int resultadoPar=0;
+	private static void procesarNumeros(int[] num) {
 		for (int i = 0; i < num.length; i++) {
-			num[i] = num[i];
-			if (esPar(num[i]) && (esPar(num[i])!= true)) {
-				resultadoPar = numPar(num[i]) / 2;
-			}	
+			if (esPar(num[i])) {
+				int resultadoPar = num[i] / 2;
+				System.out.println("La division del numero  " + num[i] + " random par es de " + resultadoPar);
+			} else {
+				int resultadoImpar = num[i] * 2;
+				System.out.println("La multiplicacion del numero  " + num[i] + " random par es de " + resultadoImpar);
+			}
+
 		}
-		;
-		return resultadoPar;
+
 	}
 
 	private static int[] llenarConAleatorios(Random rnd, int numeros[]) {
 		// TODO Auto-generated method stub
 		for (int i = 0; i < numeros.length; i++) {
 			numeros[i] = rnd.nextInt(MIN, MAX);
-			System.out.printf("%d ", numeros[i]);
+			if (numeros.length -1 == i)  {
+				System.out.printf("%d ", numeros[i]);
+			}else {
+				
+				System.out.printf("%d, ", numeros[i]);
+
+			}
+
 		}
+		System.out.println();
 		return numeros;
 	}
 }
