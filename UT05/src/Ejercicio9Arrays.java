@@ -26,7 +26,7 @@ public class Ejercicio9Arrays {
 
 	private static void procesarNumeros(int[] num) {
 		for (int i = 0; i < num.length; i++) {
-<<<<<<< Updated upstream
+
 			if (esPar(num[i])) {
 				int resultadoPar = num[i] / 2;
 				System.out.println("La division del numero  " + num[i] + " random par es de " + resultadoPar);
@@ -34,19 +34,19 @@ public class Ejercicio9Arrays {
 				int resultadoImpar = num[i] * 2;
 				System.out.println("La multiplicacion del numero  " + num[i] + " random par es de " + resultadoImpar);
 			}
-
+		}
 		}
 
-=======
-			num[i] = num[i];
-			if (esPar(num[i]) && (esPar(num[i])!= true)) {
-				resultadoPar = (num[i]) / 2;
-			}	
-		}
-		
-		return resultadoPar;
->>>>>>> Stashed changes
-	}
+//=======
+//			num[i] = num[i];
+//			if (esPar(num[i]) && (esPar(num[i])!= true)) {
+//				resultadoPar = (num[i]) / 2;
+//			}	
+//		}
+//		
+//		return resultadoPar;
+//>>>>>>> Stashed changes
+//	}
 
 	private static int[] llenarConAleatorios(Random rnd, int numeros[]) {
 		// TODO Auto-generated method stub
