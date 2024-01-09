@@ -7,7 +7,7 @@ public class Rectangulo {
 		this.base = base;
 		this.altura = altura;
 	}
-	private final int base;
+	private int base;
 	public Rectangulo(int base) {
 		 
 		this.base = base;
