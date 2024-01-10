@@ -13,7 +13,7 @@ public class Fecha {
 		if (anio == 0) {
 			throw new IllegalArgumentException("El año no puede ser cero");
 		}
-		if (mes < 1 || mes > 2) {
+		if (mes < 1 || mes > 12) {
 			throw new IllegalArgumentException("El mes tiene que ser un número entre 1 y 12 ambos incluidos");
 		}
 
@@ -50,9 +50,41 @@ public class Fecha {
 
 	}
 
-	private boolean esBisiesto(int anio) {
-		
-		return false;
+	public int getDia() {
+		return dia;
 	}
 
+	public void setDia(int dia) {
+		this.dia = dia;
+	}
+
+	public int getMes() {
+		return mes;
+	}
+
+	public void setMes(int mes) {
+		this.mes = mes;
+	}
+
+	public int getAnio() {
+		return anio;
+	}
+
+	public void setAnio(int anio) {
+		this.anio = anio;
+	}
+
+	private boolean esBisiesto(int anio) {
+		if ((anio % 4 == 0 && anio % 100 != 0) || (anio % 400 == 0)) {
+			return true;
+		} else {
+			return false;
+		}
+
+	}
+	public String toString() {
+		return String.format("%02d-%02d-%04d", dia,mes,anio);
+	}
+	public void diaSiguiente() {
+	}
 }
