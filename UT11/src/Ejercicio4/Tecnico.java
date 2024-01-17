@@ -13,7 +13,7 @@ public class Tecnico extends Operario {
 	}
 	@Override
 	public String toString() {
-		return String.format("Empleado %s -> %s ", this.getNombre(), this.getClass().getSimpleName());
+		return String.format("%s -> %s ", super.toString(), "Tecnico");
 
 	}
 }

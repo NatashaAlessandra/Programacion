@@ -22,7 +22,7 @@ public class Lavadora extends Electrodomestico {
 	
 	@Override
 	public double getPrecioFinal() {
-		// TODO Auto-generated method stub
+	
 		return super.getPrecioFinal();
 	}
 }

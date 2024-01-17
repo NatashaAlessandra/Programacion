@@ -1,6 +1,6 @@
 package Ejercicio4;
 
-public class Directivo extends Empleado{
+public class Directivo extends Empleado {
 
 	public Directivo() {
 		super();
@@ -10,12 +10,13 @@ public class Directivo extends Empleado{
 
 	public Directivo(String nombre) {
 		super(nombre);
-		
+
 	}
+
 	@Override
 	public String toString() {
-		return String.format(" Empleado %s -> %s",this.getNombre(), this.getClass().getSimpleName());
-		
+		return String.format("Empleado %s -> %s", this.getNombre(), "Directivo");
+
 	}
-	
+
 }
