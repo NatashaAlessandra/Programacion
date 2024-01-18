@@ -1,5 +1,5 @@
 package ejercicio8.figura;
 
-public class Romboide {
+public  class Romboide {
 
 }
