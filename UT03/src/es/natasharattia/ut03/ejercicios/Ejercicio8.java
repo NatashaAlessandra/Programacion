@@ -13,6 +13,7 @@ public class Ejercicio8 {
 		int minutos = totalMinutos % 60;
 		
 		System.out.printf("En %d minutos hay %d horas y %d minutos\n", totalMinutos, horas, minutos);
+		scanner.close();
 	}
 
 }

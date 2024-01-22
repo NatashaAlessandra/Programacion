@@ -10,7 +10,12 @@ public class Ejercicio01 {
 	boolean esEstudiante= false; 
 	
 	System.out.println ("Valor de numeroEntero:" + numeroEntero);
-	
+	System.out.println ("Valor de decimal:" + decimal);
+	System.out.println ("Valor de nombre:" + nombre);
+	System.out.println ("Valor de esEstudiante:" + esEstudiante);
+	System.out.println("La suma de numeroEntero y decimal es de:" + (numeroEntero + decimal));
+	System.out.println("La suma de numeroEntero y decimal es de:" + (numeroEntero * decimal));
+	System.out.println("Hola " + nombre);
 	
 
 	
