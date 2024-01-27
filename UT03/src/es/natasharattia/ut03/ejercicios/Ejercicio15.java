@@ -21,7 +21,7 @@ public class Ejercicio15 {
 		variableB = auxiliar;
 		
 		System.out.printf("La variable A vale %d y la variable B vale %d\n", variableA, variableB);
-		
+		scanner.close();
 		
 	}
 

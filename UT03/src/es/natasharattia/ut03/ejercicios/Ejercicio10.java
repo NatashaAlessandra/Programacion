@@ -15,6 +15,7 @@ public class Ejercicio10 {
 		
 		double precioFinal =  precioCompra * 0.85;
 		System.out.printf("El total a pagar es de %.2f.: ", precioFinal);
+		scanner.close();
 	}
 
 }

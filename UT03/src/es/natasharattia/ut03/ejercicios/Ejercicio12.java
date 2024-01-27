@@ -13,6 +13,9 @@ public class Ejercicio12 {
 		System.out.println("Introduce otro número");
 		int numero2 = scanner.nextInt();
 		
+		int distancia = Math.abs(numero1 - numero2);
+		System.out.printf("La distancia entre el primero número y el segundo número es de %d", distancia );
+		
 		//int distancia = numero1 - numero2 
 		
 	}
