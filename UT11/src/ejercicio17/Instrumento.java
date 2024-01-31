@@ -5,17 +5,25 @@ public abstract class Instrumento {
 	String propietario;
 	int dificultad;
 	
-	public abstract void tocar();
+	public  void tocar() {
+		System.out.printf("El %s empieza a sonar \n", getNombreInstrumento() );
+	
+	}
+	public abstract String getNombreInstrumento();
 
-	public abstract void parar();
+	public  void parar() {
+		System.out.printf("El %s empieza a parar \n", getNombreInstrumento() );
+	}
 	
 	public boolean esMasDificil(Instrumento instrumento) {
+		if (this.dificultad > instrumento.dificultad) {
+			System.out.printf("El instrumento %s es mas dificil que %s \n", this.getNombreInstrumento(), instrumento.getNombreInstrumento() );	
+		}
 		return true;
 		
 	}
 
-	public Instrumento(int dificultad) {
-		super();
+	public Instrumento(int dificultad, String propietario) {
 		this.dificultad = dificultad;
 	}
 

@@ -4,8 +4,8 @@ public abstract class Cuerda extends Instrumento {
 
 	int numeroCuerdas;
 
-	public Cuerda(int numeroCuerdas, int dificultad) {
-		super(dificultad);
+	public Cuerda(int numeroCuerdas, int dificultad, String propietario) {
+		super(dificultad, propietario);
 		this.numeroCuerdas = numeroCuerdas;
 	}
 

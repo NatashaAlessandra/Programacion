@@ -1,16 +1,19 @@
 package ejercicio17;
 
-public abstract class Violin extends Frotada {
+public class Violin extends Frotada {
 
-	public Violin(int numeroCuerdas, int dificultad) {
-		super(numeroCuerdas, dificultad);
-		// TODO Auto-generated constructor stub
+	private static final String NOMBRE_INSTRUMENTO = "violin";
+	private static final int DIFICULTAD = 9;
+	private static final int NUM_CUERDAS = 4;
+
+	public Violin(String propietario) {
+		super(NUM_CUERDAS, DIFICULTAD, propietario);
+
 	}
 
 	@Override
-	public String toString() {
-		return "Dificultad"+dificultad+", "+numeroCuerdas+" cuerdas";
+	public String getNombreInstrumento() {
+		return NOMBRE_INSTRUMENTO;
 	}
-	
 
 }

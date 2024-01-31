@@ -2,21 +2,22 @@ package ejercicio17;
 
 public class Violonchelo extends Frotada{
 
-	public Violonchelo(int numeroCuerdas, int dificultad) {
-		super(numeroCuerdas, dificultad);
-		// TODO Auto-generated constructor stub
+
+
+	private static final String NOMBRE_INSTRUMENTO = "violonchelo";
+	private static final int DIFICULTAD = 10;
+	private static final int NUM_CUERDAS = 5;
+
+	public Violonchelo(String propietario) {
+		super(NUM_CUERDAS, DIFICULTAD, propietario);
+
 	}
 
 	@Override
-	public void tocar() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void parar() {
-		// TODO Auto-generated method stub
-		
+	public String getNombreInstrumento() {
+		return NOMBRE_INSTRUMENTO;
 	}
 
 }
+
+
