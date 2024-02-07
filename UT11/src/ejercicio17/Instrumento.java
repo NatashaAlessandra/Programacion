@@ -5,13 +5,13 @@ public abstract class Instrumento {
 	String propietario;
 	int dificultad;
 	
-	public  void tocar() {
+	public void tocar() {
 		System.out.printf("El intrumento %s empieza a sonar \n", getNombreInstrumento() );
 	
 	}
 	public abstract String getNombreInstrumento();
 
-	public  void parar() {
+	public void parar() {
 		System.out.printf("El instrumento %s para de tocar \n", getNombreInstrumento() );
 	}
 	
