@@ -39,10 +39,10 @@ public class Programa {
 		return instrumentos;
 	}
 	
-	public static tocarInstrumentos();
-	public static pararInstrumentos();
-	public static buscarMasDificil();
-	public static mostrarInstrumentos();
+//	public static tocarInstrumentos();
+//	public static pararInstrumentos();
+//	public static buscarMasDificil();
+//	public static mostrarInstrumentos();
 
 	private static Instrumento crearInstrumentosAleatorios() {
 		switch (faker.random().nextInt(NUMERO_INSTRUMENTOS)) {

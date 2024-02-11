@@ -1,7 +1,5 @@
 package ejercicio22;
 
-import javax.management.RuntimeErrorException;
-
 public abstract class Vehiculo {
 
 	private String nombrePropietario;
@@ -9,8 +7,8 @@ public abstract class Vehiculo {
 	public Vehiculo(String nombrePropietario) {
 		if (nombrePropietario == null || nombrePropietario.isBlank())
 
-			this.nombrePropietario = nombrePropietario;
-		throw new RuntimeErrorException(null, "El nombre del propietario no puede ser nulo");
+			throw new IllegalArgumentException("El nombre del propietario no puede ser nulo");
+		this.nombrePropietario = nombrePropietario;
 	}
 
 	public String getNombrePropietario() {

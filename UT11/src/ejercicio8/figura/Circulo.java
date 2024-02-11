@@ -18,4 +18,11 @@ public class Circulo extends Figura {
 		// TODO Auto-generated method stub
 		return Math.PI*radio*radio;
 	}
+
+
+	@Override
+	public int getNumLados() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
