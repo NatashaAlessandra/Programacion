@@ -18,6 +18,15 @@ public class Planeador extends VehiculoAereo implements Matriculable{
 		// TODO Auto-generated method stub
 		return matricula;
 	}
+
+
+
+	@Override
+	public String toString() {
+		return "Planeador [matricula=" + matricula + ", altitudMaxima=" + altitudMaxima + ", Matricula="
+				+ getMatricula() + ", AltitudMaxima=" + getAltitudMaxima() + ", NombrePropietario="
+				+ getNombrePropietario() + "]";
+	}
 	
 
 }

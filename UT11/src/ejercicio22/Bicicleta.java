@@ -9,4 +9,10 @@ public class Bicicleta extends VehiculoTerrestre {
 		}
 	}
 
+	@Override
+	public String toString() {
+		return "Bicicleta [NumRuedas= " + getNumRuedas() + ", NombrePropietario= " + getNombrePropietario()
+				+ "]";
+	}
+
 }

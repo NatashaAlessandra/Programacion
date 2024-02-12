@@ -40,4 +40,12 @@ public class Camion extends VehiculoTerrestre implements Matriculable, Motorizad
 		return null;
 	}
 
+	@Override
+	public String toString() {
+		return "Camion [matricula=" + matricula + ", cargaMaxima=" + cargaMaxima + ", potencia=" + potencia
+				+ ",CargaMaxima=" + getCargaMaxima() + ", Matricula=" + getMatricula() + ", Potencia="
+				+ getPotencia() + ", NumRuedas=" + getNumRuedas() + ", NombrePropietario="
+				+ getNombrePropietario()  + "]";
+	}
+
 }

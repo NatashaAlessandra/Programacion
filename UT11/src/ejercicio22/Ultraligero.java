@@ -37,4 +37,12 @@ public class Ultraligero extends VehiculoAereo implements Matriculable, Motoriza
 		return matricula;
 	}
 
+	@Override
+	public String toString() {
+		return "Ultraligero [matricula= " + matricula + ", potencia= " + potencia
+				+ ", altitudMaxima= " + altitudMaxima + ", Envergadura= " + getEnvergadura() + ", Potencia= "
+				+ getPotencia() + ", Matricula=" + getMatricula() + ", AltitudMaxima=" + getAltitudMaxima()
+				+ ", NombrePropietario= " + getNombrePropietario() + "]";
+	}
+
 }
