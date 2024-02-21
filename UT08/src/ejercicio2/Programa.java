@@ -18,7 +18,7 @@ public class Programa {
 		
 		String option;
 		
-//		do {
+//	ww	do {
 			
 //			option = pedirOpcionMenu();
 //			procesarOpcionMenu(alumnos,option);
