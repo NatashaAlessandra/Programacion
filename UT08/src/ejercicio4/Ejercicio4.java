@@ -1,9 +1,14 @@
 package ejercicio4;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class Ejercicio4 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		 Random rnd = new Random();
+		 
+		 ArrayList<Interger>
 
 	}
 
