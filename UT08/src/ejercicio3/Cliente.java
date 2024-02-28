@@ -16,7 +16,18 @@ public class Cliente {
 		this.apellido = apellido;
 		this.fechaNacimiento = fechaNacimiento;
 		this.email = email;
+		
 	}
+	
+
+	public Cliente( Cliente cliente) {
+		this.id = cliente.id;
+		this.nombre = cliente.nombre;
+		this.apellido = cliente.apellido;
+		this.fechaNacimiento = cliente.fechaNacimiento;
+		this.email = cliente.email;
+	}
+
 
 	public int getId() {
 		return id;
