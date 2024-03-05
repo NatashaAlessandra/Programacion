@@ -7,8 +7,8 @@ public class Ejercicio4 {
 
 	public static void main(String[] args) {
 		 Random rnd = new Random();
-		 
-		 ArrayList<Interger>
+		
+//		 ArrayList<Interger>
 
 	}
 
